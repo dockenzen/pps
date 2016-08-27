@@ -1,0 +1,22 @@
+<ion-view view-title="Chats">
+  <ion-content>
+  <div class="list card" ng-repeat="mensaje in misMensajes">
+
+<!--<strong>{{mensaje.usuario}}</strong>
+  </div>
+-->
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in misMensajes" type="item-text-wrap" href="#/tab/chats/{{chat.usuario}}">
+        <img ng-src="{{chat.foto}}">
+        <h2>{{chat.usuario}}</h2>
+        <p>{{chat.mensaje}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  
+  </ion-content>
+</ion-view>
