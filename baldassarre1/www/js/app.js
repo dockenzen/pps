@@ -77,6 +77,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'AccountCtrl'
       }
     }
+
+    
+
+    .state('tab.paises', {
+    url: '/paises',
+    views: {
+      'tab-paises': {
+        templateUrl: 'templates/tab-paises.html',
+        controller: 'PaisesCtrl'
+      }
+    }
+
+    .state('tab.paisDetalle', {
+    url: '/paises/:paisId',
+    views: {
+      'tab-paisesDetalle': {
+        templateUrl: 'templates/paisDetalle.html',
+        controller: 'PaisDetalleCtrl'
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback

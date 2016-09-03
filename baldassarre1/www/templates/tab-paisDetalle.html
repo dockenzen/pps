@@ -6,10 +6,10 @@
   </div>
 -->
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in misMensajes" type="item-text-wrap" href="#/tab/chats/{{chat.usuario}}">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in listadoPaises" type="item-text-wrap" href="#/tab/chats/{{chat.usuario}}">
         <img ng-src="{{chat.foto}}">
-        <h2>{{chat.usuario}}</h2>
-        <p>{{chat.mensaje}}</p>
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.capital}}</p>
         <i class="icon ion-chevron-right icon-accessory"></i>
 
         <ion-option-button class="button-assertive" ng-click="remove(chat)">
