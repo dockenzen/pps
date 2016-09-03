@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('PaisesCtrl', function($scope) {  
+.controller('PaisesCtrl', function($scope,$http) {  
 $http.get('https://restcountries.eu/rest/v1/region/americas')
   .then(function(respuesta) {       
 

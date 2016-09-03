@@ -1,0 +1,16 @@
+24/09
+
+codigo y firebase abierta
+github
+celu
+
+ingreso a chat con imagen personalizada
+guardo chat
+
+
+Estilos de ionic, ionic material.(card)
+
+1) Crear una trivia de minimo 3 preguntas con respuesta unica y varias opciones. (minimo 3)
+La app debe tener icono, imagen de inicio, (splash y icon)
+Debe emular un ingreso pidiendo el nombre 
+y tener una pagina del autor(foto, github,gmail,loquesea).
