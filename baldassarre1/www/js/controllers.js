@@ -43,7 +43,7 @@ $http.get('https://restcountries.eu/rest/v1/region/americas')
   $scope.remove = function(chat) {
     Chats.remove(chat);
   };
-})
+})   
 
 
 
