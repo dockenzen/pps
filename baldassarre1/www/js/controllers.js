@@ -45,6 +45,8 @@ $http.get('https://restcountries.eu/rest/v1/region/americas')
   };
 })
 
+
+
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
   console.log($stateParams);
