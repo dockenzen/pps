@@ -1,13 +1,13 @@
 <ion-view view-title="Chats">
   <ion-content>
-  <div class="list card" ng-repeat="mensaje in misMensajes">
+  <div class="list card">
 
 <!--<strong>{{mensaje.usuario}}</strong>
   </div>
 -->
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in misMensajes" type="item-text-wrap" href="#/tab/chats/{{chat.usuario}}">
-        <img ng-src="{{chat.foto}}">
+        <img ng-src="img/{{chat.usuario}}.jpg">
         <h2>{{chat.usuario}}</h2>
         <p>{{chat.mensaje}}</p>
         <i class="icon ion-chevron-right icon-accessory"></i>

@@ -6,13 +6,13 @@
   </div>
 -->
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in listadoPaises" type="item-text-wrap" href="#/tab/chats/{{chat.usuario}}">
-        <img ng-src="{{chat.foto}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.capital}}</p>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="pais in listadoPaises" type="item-text-wrap" href="#/tab/chats/{{pais.usuario}}">
+        <img ng-src="{{pais.foto}}">
+        <h2>{{pais.name}}</h2>
+        <p>{{pais.capital}}</p>
         <i class="icon ion-chevron-right icon-accessory"></i>
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+        <ion-option-button class="button-assertive" ng-click="remove(pais)">
           Delete
         </ion-option-button>
       </ion-item>
