@@ -89,9 +89,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
 })
     .state('tab.paisDetalle', {
-    url: '/paises/:paisId',
+    url: '/paises/:pais',
     views: {
-      'tab-paisesDetalle': {
+      'tab-paises': {
         templateUrl: 'templates/tab-paisDetalle.html',
         controller: 'PaisDetalleCtrl'
       }

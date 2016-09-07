@@ -52,6 +52,29 @@ $http.get('https://restcountries.eu/rest/v1/region/americas')
   console.log($stateParams);
 })
 
+.controller('PaisDetalleCtrl', function($scope, $stateParams, Chats,$http) {
+  
+  $scope.datosDelPais=[];
+  var pais = $stateParams.pais;
+  console.log('https://restcountries.eu/rest/v1/name/'+pais+"?fullText=true");
+  //$scope.chat = Chats.get($stateParams);
+  //console.log($stateParams.pais);
+  function bien(respuesta){
+    $scope.datosDelPais = respuesta.data[0];
+    console.log("bien",$scope.datosDelPais);//muestra los datos
+    console.log("bien"+$scope.datosDelPais);//object object
+  }
+
+  function mal(respuesta){    
+    console.info("error"+respuesta);
+    
+  }
+
+
+  $http.get('https://restcountries.eu/rest/v1/name/'+pais+"?fullText=true").then(bien,mal);
+
+})
+
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
     enableFriends: true
@@ -100,5 +123,3 @@ $http.get('https://restcountries.eu/rest/v1/region/americas')
     }, 1000);
   };
 });
-
-
